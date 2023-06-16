@@ -62,16 +62,7 @@ export interface AuthState {
       }
 
       case AuthActionTypes.LOGOUT: {
-        return {
-          ...state,
-          isAuthenticated: false,
-          user: {
-            name: "",
-            email: "",
-            password:"",
-          },
-          errorMessage: ""
-        };
+        return initialState;
       }
 
       default: {
